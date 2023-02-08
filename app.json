@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "getSMSAndroid",
-    "slug": "getSMSAndroid",
+    "slug": "getsms",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.RECEIVE_SMS",
+        "android.permission.READ_SMS"
+      ],
+      "package": "com.thvroyal.getSMSAndroid",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "272a771e-950d-4d6b-af9b-80e8f3c40b88"
+      }
+    },
+    "owner": "thvroyal"
   }
 }
